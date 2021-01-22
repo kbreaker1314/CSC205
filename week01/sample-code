@@ -1,1 +1,18 @@
-to be added
+/*
+ * exercise #1
+ * our first C# program wants to display "Hello World!" to the console (computer screen)
+ * but there are so many bugs, can you find all of them? have fun!
+ */
+
+Use Systems:
+namespace CSC180Week01
+{
+    class program
+    {
+        void static Main[string args]
+        (
+            Console.Writeline('Hell0 Wor1d!')
+        )
+    }
+}
+
