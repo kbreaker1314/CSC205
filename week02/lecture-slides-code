@@ -1,1 +1,28 @@
-hi
+/*
+ * Lecture slides / textbook code - Week 2
+ * Identifier, Arithmetic Operators, etc.
+ */
+
+using System;
+namespace ThinkSharp
+{
+    public class Hello
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine(5 + 2);
+            Console.WriteLine(5 - 2);
+            Console.WriteLine(5 * 2);
+            Console.WriteLine(5 / 2);
+            Console.WriteLine(5.0 / 2.0);
+            //1stNumber = 5;
+            //2ndNumber = 2;
+            //Console.WriteLine(1stNumber + 2ndNumber);
+            //Console.WriteLine(1stNumber - 2ndNumber);
+            //Console.WriteLine(1stNumber * 2ndNumber);
+            //Console.WriteLine(1stNumber / 2ndNumber);
+        }
+    }
+}
+
+
