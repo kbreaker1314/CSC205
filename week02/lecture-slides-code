@@ -25,4 +25,33 @@ namespace ThinkSharp
 }
 
 
-
+/*
+ * Lecture slides / textbook code - Week 2
+ * Chapter 3 Section 3.2 Converting from double to int
+ */
+using System;
+namespace ThinkSharp
+{
+    public class Week02
+    {
+        public static void Main(string[] args)
+        {
+            //What are the values in variables x, y, z, m, n, p and q?
+            int x = 1; // what if int x = 1.1;
+            double y = 1;
+            double z = 1 / 3;
+            double m = 1.0 / 3.0;
+            double n = 1 / 3.0;
+            double pi = 3.14159;
+            int p = (int)pi;
+            double q = (int)pi * 20.0;
+            Console.WriteLine("x=" + x);
+            Console.WriteLine("y=" + y);
+            Console.WriteLine("z=" + z);
+            Console.WriteLine("m=" + m);
+            Console.WriteLine("n=" + n);
+            Console.WriteLine("p=" + p); 
+            Console.WriteLine("q=" + q);
+        }
+    }
+}
