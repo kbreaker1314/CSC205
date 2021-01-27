@@ -55,3 +55,34 @@ namespace ThinkSharp
         }
     }
 }
+
+
+/*
+ * Lecture slides / textbook code - Week 2
+ * Chapter 3 Section 3.3 Math Methods
+ * note that if the following math expressions are a bit too difficult for you, don't worry too much.
+ */
+
+using System;
+namespace ThinkSharp
+{
+    public class Week02
+    {
+        public static void Main(string[] args)
+        {
+            double root = Math.Sqrt(17.0);
+            double angle = 1.5;
+            double height = Math.Sin(angle);
+            Console.WriteLine("root=" + root);
+            Console.WriteLine("angle=" + angle); 
+            Console.WriteLine("height=" + height);
+
+            int x = (int)Math.Round(Math.PI * 20.0);
+            double y = Math.Cos(angle + Math.PI / 2);
+            double z = Math.Exp(Math.Log(10.0));
+            Console.WriteLine("x=" + x);
+            Console.WriteLine("y=" + y);
+            Console.WriteLine("z=" + z);
+        }
+    }
+}
