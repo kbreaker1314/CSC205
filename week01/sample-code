@@ -16,3 +16,72 @@ namespace CSC205Week01
     }
 }
 
+
+/*
+ * Lecture slides/textbook code
+ * Section 2.1 More writing, textbook page 13
+ */
+using System;
+
+namespace ThinkSharp
+{
+    public class Program
+    {
+        // Generates some simple output.
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, world."); // print one line
+            Console.WriteLine("How are you?"); // print another
+        }
+    }
+}
+
+
+/*
+ * Lecture slides / textbook code
+ * Section 2.4 Printing variables, textbook page 16-17
+ */
+using System;
+namespace ThinkSharp
+{
+    public class Hello
+    {
+        public static void Main(string[] args)
+        {
+            string firstLine;
+            firstLine = "Hello, again!";
+            int hour, minute;
+            hour = 11;
+            minute = 59;
+            Console.WriteLine(firstLine);
+            Console.Write("The current time is ");
+            Console.Write(hour);
+            Console.Write(":");
+            Console.Write(minute);
+            Console.WriteLine(".");
+        }
+    }
+}
+
+
+/*
+ * Lecture slides / textbook code
+ * Section 2.6 Operators, textbook page 18
+ */
+using System;
+namespace ThinkSharp
+{
+    public class Hello
+    {
+        public static void Main(string[] args)
+        {
+            int hour, minute;
+            hour = 11;
+            minute = 59;
+            Console.Write("Number of minutes since midnight: ");
+            Console.WriteLine(hour * 60 + minute);
+            Console.Write("Fraction of the hour that has passed: ");
+            Console.WriteLine(minute / 60);
+        }
+    }
+}
