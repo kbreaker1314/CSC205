@@ -2,7 +2,6 @@
  * Lecture slides / textbook code - Week 2
  * Identifier, Arithmetic Operators, etc.
  */
-
 using System;
 namespace ThinkSharp
 {
@@ -24,5 +23,6 @@ namespace ThinkSharp
         }
     }
 }
+
 
 
