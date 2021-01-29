@@ -141,3 +141,29 @@ namespace CSC205
 }
 
 
+/*
+ * Lecture slides / textbook code
+ * 3.10 Methods with multiple parameters
+ */
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int hour = 11;
+            int minute = 59;
+            WriteTime(hour, minute);
+        }
+        public static void WriteTime(int hour, int minute)
+        {
+            Console.Write(hour);
+            Console.Write(":");
+            Console.WriteLine(minute);
+        }
+    }
+}
+
+
