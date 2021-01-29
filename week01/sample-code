@@ -95,7 +95,7 @@ using System;
 
 namespace CSC205
 {
-    public class Hello
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -116,5 +116,28 @@ namespace CSC205
     }
 }
 
+
+/*
+ * Lecture slides / textbook code
+ * 3.8 Method Parameters and Arguments
+ */
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string argument = "Never say never.";
+            WriteTwice(argument);
+        }
+        public static void WriteTwice(string str)
+        {
+            Console.WriteLine(str);
+            Console.WriteLine(str);
+        }
+    }
+}
 
 
