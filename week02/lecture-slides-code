@@ -79,7 +79,7 @@ namespace ThinkSharp
 
             int x = (int)Math.Round(Math.PI * 20.0);
             double y = Math.Cos(angle + Math.PI / 2);
-            double z = Math.Exp(Math.Log(10.0));
+            double z = Math.Exp(Math.Log(10.0)); //this one might too difficult for you. if so, skip this one!
             Console.WriteLine("x=" + x);
             Console.WriteLine("y=" + y);
             Console.WriteLine("z=" + z);
