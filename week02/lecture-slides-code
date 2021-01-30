@@ -173,7 +173,7 @@ namespace CSC205
 /*
  * Lecture slides / textbook code
  * 4.6 The Return Statement
- * Version 1: WriteLog() method with the return type of void
+ * Version 1: WriteLogarithm() method with the return type of void
  */
 
 using System;
@@ -206,3 +206,38 @@ namespace CSC205Week02
 }
 
 
+/*
+ * Lecture slides / textbook code
+ * 4.6 The Return Statement
+ * Version 2: WriteLogarithm() method with the return type of double
+ */
+
+using System;
+
+namespace CSC205Week02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x;
+            Console.WriteLine("Enter a floating number:" );
+            // Convert.ToDouble converts the string taken in by Console.ReadLine() to a double value
+            x = Convert.ToDouble(Console.ReadLine());
+            if (x <= 0.0)
+            {
+                Console.WriteLine("Positive numbers only, please");
+            }
+            else
+            {
+                Console.WriteLine($"The natural logarithm of {x} is {WriteLogarithm(x)}");
+            }
+        }
+
+        public static double WriteLogarithm(double x)
+        {            
+            double result = Math.Log(x);
+            return result;
+        }
+    }
+}
