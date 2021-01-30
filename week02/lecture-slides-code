@@ -172,6 +172,43 @@ namespace CSC205
 
 /*
  * Lecture slides / textbook code
+ * 4.5 Nested conditionals
+ */
+
+using System;
+
+namespace CSC205Week02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x;
+            Console.WriteLine("Enter a number:");
+            // Convert.ToDouble converts the string taken in by Console.ReadLine() to a double value
+            x = Convert.ToDouble(Console.ReadLine());
+            if (x > 0)
+            {
+                Console.WriteLine($"{x} is positive");
+            }
+            else 
+            {
+                if (x < 0)
+                {
+                    Console.WriteLine($"{x} is negative");
+                }
+                else
+                {
+                    Console.WriteLine($"{x} is zero!");
+                }
+            }
+        } //end of Main
+    }//end of Program
+}
+
+
+/*
+ * Lecture slides / textbook code
  * 4.6 The Return Statement
  * Version 1: WriteLogarithm() method with the return type of void
  */
