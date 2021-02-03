@@ -1,0 +1,19 @@
+/*
+ * CSC205 Week01 Programming Assignment
+ * #3 Create a program that will display to the console the name of each member of your team, all in one line.
+ * Team members: Name1, Name2 and Name3
+ */
+
+using System;
+
+namespace CSC205Homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Our team members: Name1, Name2 and Name3 ");
+        }
+    }
+}
+
