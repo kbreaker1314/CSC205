@@ -109,3 +109,98 @@ namespace CSC205
         }
     }
 }
+
+
+
+//======== recursion ========
+/*
+ * CSC205 Week03
+ * Lecture slides / textbook code
+ * Exercise: Recursion
+ */
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Countdown(5);
+        }
+        public static void Countdown(int n)
+        {
+            if (n == 0)
+            {
+                Console.WriteLine("Blastoff!");
+            }
+            else
+            {
+                Console.WriteLine(n);
+                Countdown(n - 1);
+            }
+        }
+    }
+}
+
+
+/*
+ * CSC205 Week03
+ * Lecture slides / textbook code
+ * Exercise: Recursion
+ */
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            NLines(5);
+        }
+        public static void NLines(int n)
+        {
+            if (n > 0)
+            {
+                Console.WriteLine("---------------");
+                NLines(n - 1);
+            }
+        }
+
+    }
+}
+
+
+/*
+ * CSC205 Week03
+ * Lecture slides / textbook code
+ * Exercise: Recursion - factorial function
+ */
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int i = 17;
+            Console.WriteLine($"Factorial of {i} is {Factorial(i)}");
+        }
+        public static int Factorial(int n)
+        {
+            if (n == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                int recurse = Factorial(n - 1);
+                int result = n * recurse;
+                return result;
+            }
+        }
+    }
+}
+
