@@ -1,1 +1,111 @@
+/*
+ * CSC205 Week03
+ * Lecture slides / textbook code
+ * Exercise: C# method
+ */
 
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
+
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            //string s = "world";
+            Greeting("World");
+        }
+        public static void Greeting(string str)
+        {
+            Console.WriteLine("Hello " + str + "!");
+        }
+    }
+}
+
+
+/*
+ * CSC205 Week03
+ * Lecture slides / textbook code
+ * Exercise: C# method definition, invocation, etc.
+ */
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string s;
+            Console.WriteLine("Please enter your name:");
+            s = Console.ReadLine();
+            Console.WriteLine("Please enter your age (1-99):");
+            int age = 0;
+            age = Convert.ToInt32(Console.ReadLine());
+            Greeting(s, age);
+        }
+        public static void Greeting(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + "!");
+            if (age>21)
+                Console.WriteLine("you can buy alcohol!");
+            else
+                Console.WriteLine("Sorry, you can't buy alcohol!");
+        }
+    }
+}
+
+
+
+/*
+ * CSC205 Week03
+ * Lecture slides / textbook code
+ * Exercise: C# method definition, invocation, etc.
+ */
+using System;
+
+namespace CSC205
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string s;
+            Console.WriteLine("Please enter your name:");
+            s = Console.ReadLine();
+            Console.WriteLine("Please enter your age (1-99):");
+            int age = 0;
+            age = Convert.ToInt32(Console.ReadLine());
+            Greeting(s, age);
+        }
+        public static void Greeting(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + "!");
+            if (CheckAge(age))
+                Console.WriteLine("you can buy alcohol!");
+            else
+                Console.WriteLine("Sorry, you can't buy alcohol!");
+        }
+        public static bool CheckAge(int age)
+        {
+            if (age > 21)
+                return true;
+            else
+                return false;
+        }
+    }
+}
