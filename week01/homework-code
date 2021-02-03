@@ -80,3 +80,73 @@ namespace HW1
 }
 
 
+===== sample code from your classmates =====
+
+/* Week 1 Assignment
+ * CSC 205: Kyung Haug, Joseph Hartmann, Tyler McCready
+ * Group 3
+ * NOTE: We all approached the project slightly differently, but collaborated to get a similar result.
+ */
+using System;
+
+namespace CSC180Week01
+{
+    class Program
+    {
+        static void Main (string[] args)
+        {
+            // #2 Print "Hello World!" 
+            Console.WriteLine("Hello World!");
+
+            // Variables that hold classmates names
+            string name1 = "Joseph Hartmann,";
+            string name2 = " Kyung Haug,";
+            string name3 = " Tyler McCready";
+
+            // #3 Classmate names
+            Console.WriteLine("Go Group 3!");
+            Console.WriteLine(name1 + name2 + name3);
+
+            // #4 Mountain string program
+            Console.WriteLine("   ^");
+            Console.WriteLine("  ^^^");
+            Console.WriteLine(" ^^^^^");
+        }
+    }
+}
+
+
+===== sample code from your classmates, a complicated one =====
+
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] team = new string[3] { "Sentravis Wilson", "Michael Ewers", "Loc Mai" }; //Initializing new string array to hold teammate's names
+            foreach(string member in team) // Goes through every value in the array
+            {
+                Console.Write(member); // Will output each teammates name without a \n at the end to start a new line
+            }
+            Console.WriteLine();
+
+            for (int i = 1; i <= 3; i++) // Loop to account for total lines printed
+            {
+                string x = "";
+                for(int j = 1; j < (6-i); j++) // Loop to adjust white spaces
+                {
+                    x += " "; // appends blank space to pad left of tree
+                }
+                for(int k = 1; k < i*2; k++) // Loop for ^ character/Tree
+                {
+                    x += "^"; // Tree itself
+                }
+                Console.WriteLine(x); // Print entire line once created
+            }
+        }
+    }
+}
