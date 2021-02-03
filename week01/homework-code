@@ -40,3 +40,43 @@ namespace CSC205Homework
         }
     }
 }
+
+
+===== sample code from your classmates =====
+
+/*
+ * CS205 - HW1 
+ * 
+ * Teammates:   Christopher Ross, Jophel Lyles, Joshua Morales  
+ * Date:        23 January 2021
+ */
+
+namespace HW1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Part 2: Set up the Visual Studio programming environment and run the first "Hello World" program.
+            System.Console.WriteLine("Hello World!\n\n");
+
+            // Part 3: Create a program that will display to the console the name of each member of your team, all in one line.
+            System.Console.WriteLine("Christopher Ross, Jophel Lyles, Joshua Morales\n\n");
+
+            // Part 4: Create a program that will display to the console the following pattern:
+            //   ^
+            //  ^^^
+            // ^^^^^
+
+            System.Console.WriteLine("  ^");
+            System.Console.WriteLine(" ^^^");
+            System.Console.WriteLine("^^^^^\n\n");
+
+            System.Console.WriteLine("Press any key to exit...");
+            System.Console.ReadKey();
+
+        }
+    }
+}
+
+
