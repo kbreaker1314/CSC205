@@ -17,3 +17,26 @@ namespace CSC205Homework
     }
 }
 
+
+
+/*
+ * CSC205 Week01 Programming Assignment
+ * #4: Create a program that will display to the console the following pattern:
+ *   ^
+ *  ^^^
+ * ^^^^^
+ * Team members: Name1, Name2 and Name3
+ */
+
+using System;
+
+namespace CSC205Homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("  ^\n ^^^\n^^^^^");
+        }
+    }
+}
