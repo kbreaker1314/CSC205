@@ -1,0 +1,63 @@
+// 1. Debugging
+// Original
+Using Systems
+namespace CSC205Quiz01 {
+    Class program {
+        void static main(string[] args);
+        (
+            Console.Writeline("I just removed all the bugs!")
+        )
+    }
+}
+
+//bugs removed!
+using System;
+namespace CSC205Quiz01
+{
+    class Program // first letter of class name is usually uppper case
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("I just removed all the bugs!");
+        }
+    }
+}
+
+//2. Select all the valid C# identifiers:
+String, my-age, 3rdNum, dynamic, __num, M&M, @void, var
+
+Invalid:
+my-age: dash is not allowed
+3rdNum: starts with a number
+M&M: special character & is not allowed
+
+Valid:
+dynamic: valid
+@void: 
+var: 
+
+
+Valid identifiers:
+String
+my-age, 3rdNum, dynamic, __num, M&M, @void, var
+
+
+3. What does the following code snippet do? Briefly explain.
+int x=3, y=5, z;
+z = x; x = y; y = z;
+
+4. What does the following code snippet do? Briefly explain.
+double x = 3.2, y = 5.8;
+x = x + y;
+y = x - y;
+x = x - y;
+
+5. Write a C# program to display to the console the following pattern (text). 
+Extra credit: using just one Console.Write method to diplay the same pattern 
+(note that special newline character '\n' is needed)
+
+#
+##
+ ##
+  ##
+   #
