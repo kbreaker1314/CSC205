@@ -34,6 +34,7 @@ M&M: special character & is not allowed
 
 Valid:
 String: avoid it because the firsts letter of variable is usually lower case by C# naming convention
+__num: two leading underscores are okay but try to avoid this type of identifiers
 @void: 
   You can declare identifiers that match C# keywords by using the @ prefix on the identifier. 
   The @ is not part of the identifier name. For example, @if declares an identifier named if. 
