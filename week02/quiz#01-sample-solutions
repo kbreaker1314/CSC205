@@ -23,6 +23,7 @@ namespace CSC205Quiz01
     }
 }
 
+
 //2. Select all the valid C# identifiers:
 String, my-age, 3rdNum, dynamic, __num, M&M, @void, var
 
@@ -32,25 +33,29 @@ my-age: dash is not allowed
 M&M: special character & is not allowed
 
 Valid:
-dynamic: valid
+String: avoid it because the firsts letter of variable is usually lower case by C# naming convention
 @void: 
-var: 
-
-
-Valid identifiers:
-String
-my-age, 3rdNum, dynamic, __num, M&M, @void, var
+  You can declare identifiers that match C# keywords by using the @ prefix on the identifier. 
+  The @ is not part of the identifier name. For example, @if declares an identifier named if. 
+  These verbatim identifiers are primarily for interoperability with identifiers declared in other languages.
+  https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/identifier-names
+var & dynamic are Contextual Keywords. you can use them to name variables like: int var = 5; but try to avoid them. 
+for more, visit https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
 
 
 3. What does the following code snippet do? Briefly explain.
 int x=3, y=5, z;
 z = x; x = y; y = z;
+Answer: The above code snippet effectively swaps the values of x and y using a third variable z
+
 
 4. What does the following code snippet do? Briefly explain.
 double x = 3.2, y = 5.8;
 x = x + y;
 y = x - y;
 x = x - y;
+Answer: The above code snippet effectively swaps the values of x and y WITHOUT using a third variable
+
 
 5. Write a C# program to display to the console the following pattern (text). 
 Extra credit: using just one Console.Write method to diplay the same pattern 
@@ -61,3 +66,16 @@ Extra credit: using just one Console.Write method to diplay the same pattern
  ##
   ##
    #
+
+//Sample solution:
+using System;
+namespace CSC205Quiz01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("#\n##\n ##\n  ##\n   #");
+        }
+    }
+}
