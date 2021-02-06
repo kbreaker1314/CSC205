@@ -204,3 +204,50 @@ namespace CSC205
     }
 }
 
+
+
+/*
+ * CSC205 Week03
+ * Lecture slides / textbook code
+ * Section 5.4: Overloading
+ */
+
+using System;
+
+namespace CSC205Week03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Sum(2, 3));
+            Console.WriteLine(Sum(2, 3.0));
+            Console.WriteLine(Sum(2.0, 3));
+        }
+
+        public static int Sum(int a, int b)
+        {
+            int sum = 0;
+            sum = a + b;
+            return 0;
+            //return sum;
+        }
+        public static double Sum(double a, double b)
+        {
+            double sum = 0;
+            sum = a + b;
+            return 1;
+            //return sum;
+        }
+
+        public static double Sum(double a, int b)
+        {
+            double sum = 0;
+            sum = a + b;
+            return 2;
+            //return sum;
+        }
+    }
+}
+
+
