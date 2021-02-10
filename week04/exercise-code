@@ -1,0 +1,44 @@
+/*
+ * The following code adds up 1, 2, 3 ... 100.
+ * fill in the missing pieces
+ */
+using System;
+class CSC205Week04Exercise
+{
+    public static void Main()
+    {
+        __(1)__;
+        for (int i=0; __(2)__; i++)
+        {
+            sum = sum + i;
+        }
+        Console.WriteLine(sum);
+    }
+}
+
+
+/*
+ * The following code computes and diplays 1!, 2!, 3!, ... 20!
+ */
+
+using System;
+class CSC205Week04Exercise
+{
+    public static void Main()
+    {
+        for (int i=0; i<=20; i++)
+        {
+            Console.WriteLine(__(3)___);
+        }
+    }
+
+    public static long Fact(int n)
+    {
+        __(4)__
+        for (int i = 1; i<=n; i++)
+        {
+            product = __(5)__;
+        }
+        return product;
+    }
+}
